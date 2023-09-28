@@ -7,7 +7,27 @@
     <title>Girasol-ANTHONY</title>
     <link rel="stylesheet" href="style.css">
 </head>
+    <style>
+    button{
+        font-size: 30px;
+        background-color: rgb(138, 65, 17);
+        border: 3px;
+    }
+</style>
 <body>
+    <audio id="musica">
+        <source src="avici.mp3" type="audio/mp3">
+        
+    </audio>
+    
+    <button onclick="reproducirAudio()">Presioname  :)  </button >
+
+    <script>
+        function reproducirAudio() {
+            var audio = document.getElementById("musica");
+            audio.play();
+        }
+    </script>
     <div class="sunflower">
         <div class="flower_wrapper">
             <div class="flower_stem"></div>
